@@ -1,13 +1,12 @@
 #include <iostream>
+using namespace std;
 
-using namespace std; 
+int main()
+{
 
-int main(){
+    int a;
+    cin >> a;
+    cout << a << " " << 2 * a << " " << a * a << endl;
 
-    int first = 5; 
-    double second = 7; 
-
-    cout << "first is: " << first << " " << "second is: " << second << endl ; 
-
-    return 0; 
+    return 0;
 }

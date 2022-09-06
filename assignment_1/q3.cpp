@@ -1,21 +1,20 @@
 #include <iostream>
 
-using namespace std; 
+using namespace std;
 
-int main() {
+int main()
 
-const int acc = 32; 
-int t; 
-int distance; 
+{
 
-cout << "Enter a time in seconds: "<< endl; 
+    int max, n;
+    cout << "Enter the Maximum occupancy for the room. ";
+    cin >> max;
+    cout << "Enter the number of occupants of the room. ";
+    cin >> n;
+    if(n < max)
+        cout << "The number of occupants does not exceed the legal maximum. " << n-max << "more people may attend." << endl;
+    else
+        cout << "ATTENTION: MAXIMUM OCCUPANCY EXCEEDED. THE LAW REQUIRES x PERSONS TO LEAVE THE ROOM IMMEDIATELY. " << max-n << " people should be excluded." << endl;
+    return 0;
 
-cin>> t; 
-
-distance = (acc/2) * (t*t);
-
-cout<< ""<< t << "will fall in" << distance << "feet"; 
-
-return 0; 
 }
-
